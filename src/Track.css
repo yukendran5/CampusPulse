@@ -1,0 +1,159 @@
+
+/* Track Page */
+.track-page {
+  min-height: 80vh;
+  padding: 60px 20px;
+  background: #f5f7fc;
+  box-sizing: border-box;
+}
+
+.track-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.track-heading h1 {
+  color: #0f172a;
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.track-heading p {
+  color: #64748b;
+  font-size: 16px;
+}
+
+/* Track Form */
+.track-form {
+  width: 100%;
+  max-width: 550px;
+  margin: auto;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.07);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-sizing: border-box;
+}
+
+.track-form label {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.track-form input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.track-form input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.track-form button {
+  padding: 14px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.track-form button:hover {
+  background: #1d4ed8;
+}
+
+.error-message {
+  color: #dc2626;
+  text-align: center;
+}
+
+/* Issue Result */
+.issue-result {
+  width: 100%;
+  max-width: 550px;
+  margin: 30px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.07);
+  box-sizing: border-box;
+  overflow-wrap: anywhere;
+}
+
+.issue-result h2 {
+  color: #0f172a;
+  margin-bottom: 20px;
+}
+
+.issue-result p {
+  color: #475569;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.status-box {
+  margin-top: 20px;
+  padding: 18px;
+  background: #eff6ff;
+  border-radius: 8px;
+}
+
+.status-box strong {
+  color: #1e40af;
+}
+
+.status-box h3 {
+  margin-top: 8px;
+  color: #2563eb;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .track-page {
+    padding: 45px 18px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .track-page {
+    padding: 35px 14px;
+  }
+
+  .track-heading {
+    margin-bottom: 25px;
+  }
+
+  .track-heading h1 {
+    font-size: 25px;
+  }
+
+  .track-heading p {
+    font-size: 14px;
+  }
+
+  .track-form,
+  .issue-result {
+    padding: 22px 18px;
+  }
+
+  .track-form button {
+    width: 100%;
+  }
+
+  .status-box {
+    padding: 15px;
+  }
+}

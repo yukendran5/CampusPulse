@@ -1,0 +1,134 @@
+
+/* Report Page */
+.report-page {
+  min-height: 80vh;
+  padding: 60px 20px;
+  background: #f5f7fc;
+  box-sizing: border-box;
+}
+
+.report-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.report-heading h1 {
+  color: #0f172a;
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.report-heading p {
+  color: #64748b;
+  font-size: 16px;
+}
+
+/* Form Container */
+.report-form {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  padding: 35px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.07);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-sizing: border-box;
+}
+
+.report-form label {
+  font-weight: 600;
+  color: #1e293b;
+  margin-top: 8px;
+}
+
+.report-form input,
+.report-form select,
+.report-form textarea {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.report-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.report-form input:focus,
+.report-form select:focus,
+.report-form textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* Submit Button */
+.submit-report {
+  margin-top: 15px;
+  padding: 14px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-report:hover {
+  background: #1d4ed8;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .report-page {
+    padding: 45px 18px;
+  }
+
+  .report-form {
+    max-width: 550px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .report-page {
+    padding: 35px 14px;
+  }
+
+  .report-heading {
+    margin-bottom: 25px;
+  }
+
+  .report-heading h1 {
+    font-size: 25px;
+  }
+
+  .report-heading p {
+    font-size: 14px;
+  }
+
+  .report-form {
+    padding: 22px 18px;
+    gap: 10px;
+  }
+
+  .report-form input,
+  .report-form select,
+  .report-form textarea {
+    font-size: 16px;
+  }
+
+  .submit-report {
+    width: 100%;
+    padding: 15px;
+  }
+}
